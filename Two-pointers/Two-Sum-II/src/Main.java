@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1,3,4,5,7,10,11,15};
-        int target = 9;
+        int[] numbers = {-3,3,4,-3,1,2};
+        int target = 3;
         printArray(twoSum(numbers , target));
     }
 
@@ -45,8 +45,8 @@ public class Main {
                 leftPointer ++;
             }
             else{
-                result[0] = leftPointer +1;
-                result[1] = rightPointer +1;
+                result[0] = numbers[leftPointer];
+                result[1] = numbers[rightPointer];
                 break;
             }
         }
